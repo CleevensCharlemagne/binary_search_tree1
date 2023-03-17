@@ -104,6 +104,14 @@ void inorder(struct node *root)
     }
 }
 
+int main()
+{
+    struct node *root;
+    root = new_node(20);
+    insert(root,5);
+    insert(root,1);
 
+    return 0;
+}
 
 
