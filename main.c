@@ -71,6 +71,19 @@ struct node* delete(struct node *root, int x)
             return NULL;
         }
 
+        //One Child
+        else if(root->left_child==NULL || root->right_child==NULL)
+        {
+            struct node *temp;
+            if(root->left_child==NULL)
+                temp = root->right_child;
+            else
+                temp = root->left_child;
+            free(root);
+            return temp;
+        }
+
+        //Two Children
 
     }
     return root;
