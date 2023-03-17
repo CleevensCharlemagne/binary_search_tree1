@@ -98,7 +98,9 @@ void inorder(struct node *root)
 {
     if(root!=NULL) // checking if the root is not null
     {
-
+        inorder(root->left_child); // visiting left child
+        printf(" %d ", root->data); // printing data at root
+        inorder(root->right_child);// visiting right child
     }
 }
 
