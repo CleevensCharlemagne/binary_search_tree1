@@ -96,7 +96,10 @@ struct node* delete(struct node *root, int x)
 
 void inorder(struct node *root)
 {
+    if(root!=NULL) // checking if the root is not null
+    {
 
+    }
 }
 
 
