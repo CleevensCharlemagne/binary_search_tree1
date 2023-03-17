@@ -123,7 +123,16 @@ int main()
     inorder(root);
     printf("\n");
 
+    root = delete(root, 1);
 
+    root = delete(root, 40);
+
+    root = delete(root, 45);
+
+    root = delete(root, 9);
+    inorder(root);
+
+    printf("\n");
 
     return 0;
 }
