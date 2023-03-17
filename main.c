@@ -33,7 +33,9 @@ struct node* new_node(int x)
 {
     struct node *p;
     p = malloc(sizeof(struct node));
-
+    p->data = x;
+    p->left_child = NULL;
+    p->right_child = NULL;
 
     return p;
 }
