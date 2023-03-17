@@ -62,7 +62,18 @@ struct node* delete(struct node *root, int x)
         root->right_child = delete(root->right_child, x);
     else if(x<root->data)
         root->left_child = delete(root->left_child, x);
+    else
+    {
+        //No Children
+        if(root->left_child==NULL && root->right_child==NULL)
+        {
+            free(root);
+            return NULL;
+        }
 
+
+    }
+    return root;
 }
 
 
