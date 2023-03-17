@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main()
+struct node
 {
-    printf("Hello world!\n");
-    return 0;
-}
+    int data; //node will store an integer
+    struct node *right_child; // right child
+    struct node *left_child; // left child
+};
