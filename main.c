@@ -52,5 +52,18 @@ struct node* insert(struct node *root, int x)
     return root;
 }
 
+// funnction to delete a node
+struct node* delete(struct node *root, int x)
+{
+    //searching for the item to be deleted
+    if(root==NULL)
+        return NULL;
+    if (x>root->data)
+        root->right_child = delete(root->right_child, x);
+    else if(x<root->data)
+        root->left_child = delete(root->left_child, x);
+
+}
+
 
 
