@@ -23,6 +23,8 @@ struct node* find_minimum(struct node *root)
 {
     if(root == NULL)
         return NULL;
-
+    else if(root->left_child != NULL) // node with minimum value will have no left child
+        return find_minimum(root->left_child); // left most element will be minimum
+    return root;
 }
 
