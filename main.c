@@ -17,3 +17,12 @@ struct node* search(struct node *root, int x)
     else //x is smaller than the data, so we will search the left subtree
         return search(root->left_child,x);
 }
+
+//function to find the minimum value in a node
+struct node* find_minimum(struct node *root)
+{
+    if(root == NULL)
+        return NULL;
+
+}
+
