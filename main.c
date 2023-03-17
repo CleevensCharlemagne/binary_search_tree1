@@ -7,3 +7,10 @@ struct node
     struct node *right_child; // right child
     struct node *left_child; // left child
 };
+
+struct node* search(struct node *root, int x)
+{
+    if(root==NULL || root->data==x) //if root->data is x then the element is found
+        return root;
+
+}
