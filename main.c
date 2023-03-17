@@ -84,7 +84,12 @@ struct node* delete(struct node *root, int x)
         }
 
         //Two Children
-
+        else
+        {
+            struct node *temp = find_minimum(root->right_child);
+            root->data = temp->data;
+            root->right_child = delete(root->right_child, temp->data);
+        }
     }
     return root;
 }
