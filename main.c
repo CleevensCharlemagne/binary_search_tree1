@@ -94,5 +94,11 @@ struct node* delete(struct node *root, int x)
     return root;
 }
 
+void inorder(struct node *root)
+{
+
+}
+
+
 
 
