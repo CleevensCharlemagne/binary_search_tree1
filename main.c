@@ -40,4 +40,13 @@ struct node* new_node(int x)
     return p;
 }
 
+struct node* insert(struct node *root, int x)
+{
+    //searching for the place to insert
+    if(root==NULL)
+        return new_node(x);
+
+}
+
+
 
