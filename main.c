@@ -116,6 +116,14 @@ int main()
     insert(root,12);
     insert(root,30);
     insert(root,25);
+    insert(root,40);
+    insert(root, 45);
+    insert(root, 42);
+
+    inorder(root);
+    printf("\n");
+
+
 
     return 0;
 }
