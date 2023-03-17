@@ -28,3 +28,11 @@ struct node* find_minimum(struct node *root)
     return root;
 }
 
+//function to create a node
+struct node* new_node(int x)
+{
+    struct node *p;
+
+}
+
+
