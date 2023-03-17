@@ -32,7 +32,10 @@ struct node* find_minimum(struct node *root)
 struct node* new_node(int x)
 {
     struct node *p;
+    p = malloc(sizeof(struct node));
 
+
+    return p;
 }
 
 
