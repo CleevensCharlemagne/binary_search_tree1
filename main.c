@@ -112,6 +112,10 @@ int main()
     insert(root,1);
     insert(root,15);
     insert(root,9);
+    insert(root,7);
+    insert(root,12);
+    insert(root,30);
+    insert(root,25);
 
     return 0;
 }
