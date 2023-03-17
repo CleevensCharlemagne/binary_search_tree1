@@ -110,6 +110,8 @@ int main()
     root = new_node(20);
     insert(root,5);
     insert(root,1);
+    insert(root,15);
+    insert(root,9);
 
     return 0;
 }
